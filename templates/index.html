@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Flask</title>
+    <link rel="stylesheet" href="{{url_for('static' , filename = 'css/style.css')}}">
+    
+</head>
+<body>
+    <h1>Todo List Flask</h1>
+    <form action="{{url_for('home')}}" class = "input-container">
+        <input type="text" placeholder="Enter Todo" id = "input-todo" name = "todo_name">
+        <button id="add-todo">+</button>
+    </form>
+    <h2>Todos</h2>
+    <div class="todo-container">
+        <div class="todo">
+        <p>Write SQL</p>
+            <div class="actions">
+                <form action="">
+                    <input type="checkbox">
+                </form>
+                <form action="">
+                    <button>Delete</button>
+                </form>
+                
+            </div>
+        </div>
+        <div class="todo">
+        <p>Write Python</p>
+            <div class="actions">
+                <form action="">
+                    <input type="checkbox">
+                </form>
+                <form action="">
+                    <button>Delete</button>
+                </form>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
